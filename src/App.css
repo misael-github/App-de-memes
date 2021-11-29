@@ -47,6 +47,7 @@ body {
   background-color: #6166B3;
   border: none;
   color: white;
+  font-family: 'Open Sans', sans-serif;
 }
 .meme span{
   text-align: center;
@@ -58,6 +59,7 @@ body {
   color: white;
   text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0#000;
 }
+
 @media (min-width :749px ){
   .meme span{
     margin-top: 260px;
@@ -72,6 +74,7 @@ body {
   max-width: 800px;
   height: 50vh;
   margin: auto;
+  box-sizing: border-box;
 }
 .meme span:nth-child(1){
   margin-top: 65px;
@@ -81,4 +84,5 @@ body {
   width: 100%;
   margin-top: 20px;
   object-fit: contain;
+  /* background-color: #000; */
 }

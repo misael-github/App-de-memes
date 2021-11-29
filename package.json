@@ -1,5 +1,5 @@
 {
-  "homepage":"https://misael.github.io/App-de-memes",
+ 
   "name": "generador-de-memes",
   "version": "0.1.0",
   "private": true,
@@ -42,6 +42,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    
   }
 }

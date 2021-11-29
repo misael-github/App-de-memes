@@ -2,8 +2,7 @@
 import "./App.css";
 import React, {useState} from "react"
 import html2canvas from "html2canvas"
-
-
+// import fire from "../public/assets"
 function App() {
 
   const [linea1, setLinea1] = useState("")
@@ -37,7 +36,12 @@ function App() {
   });
   
   }
-    
+   
+       window.onload = function() {
+       const img = document.getElementById("img")
+       img.src = "/App-de-memes/assets/fire.jpg"
+     
+   } 
 
   return (
     <div className="App">
@@ -48,7 +52,7 @@ function App() {
       {/* Select piker de memes */}
       {/* <div className="select">  */}
       <select onChange = {onChangeImagen} className="select" >
-        <option selected disabled>Memes</option>
+        <option disabled>Options</option>
         <option value="fire">Casa en llamas</option>
         <option value="futurama"> Futurama</option>
         <option value="history">History Channel</option>
@@ -64,16 +68,19 @@ function App() {
       <input className="inputs" onChange ={onChangeLinea1} type="text" placeholder="Linea 1" />
       <br />
       <input className="inputs"  onChange = {onChangeLinea2} type="text" placeholder="Linea 2" />
-      <br />
+      <br/>
+      
       {/* Botón exportar */}
 
       <button className="buttonExportar"  onClick={onClickExportar}>Descargar</button>
       </div>
       <div className="meme" id="meme">
-        <span>{linea1}</span>
+        <span className="span-1">{linea1}</span>
         <br/>
         <span>{linea2}</span>
-        <img src={"./assets/" + imagen + ".jpg"} alt = "imagenes"/>
+        
+
+        <img id="img" src= {"/App-de-memes/assets/" + imagen + ".jpg"} alt = "imagenes"/>
       </div>
     </div>
   );
