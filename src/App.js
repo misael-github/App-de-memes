@@ -39,7 +39,7 @@ function App() {
    
        window.onload = function() {
        const img = document.getElementById("img")
-       img.src = "/App-de-memes/assets/fire.jpg"
+       img.src = "/assets/fire.jpg"
      
    } 
 
@@ -80,7 +80,7 @@ function App() {
         <span>{linea2}</span>
         
 
-        <img id="img" src= {"/App-de-memes/assets/" + imagen + ".jpg"} alt = "imagenes"/>
+        <img id="img" src= {"/assets/" + imagen + ".jpg"} alt = "imagenes"/>
       </div>
     </div>
   );
