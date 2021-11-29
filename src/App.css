@@ -29,17 +29,12 @@ body {
 }
 
 
-.select{
-  /* width: 95%;
-  margin: auto; */
-
-}
 .container-inputsAndButton{
   display: flex;
   flex-direction: column;
   width: 75%;
   max-width: 500px;
-  margin: 10px auto 50px auto;
+  margin: 10px auto -20px auto;
 }
 .inputs, .select, .buttonExportar{
   padding: 10px;
@@ -84,5 +79,6 @@ body {
 .meme img {
   height: 100%;
   width: 100%;
+  margin-top: 20px;
   object-fit: contain;
 }
